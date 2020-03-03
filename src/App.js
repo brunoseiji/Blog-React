@@ -4,6 +4,7 @@ import firebase from './firebase';
 import './style.css';
 
 import Home from './components/Home';
+import Login from './components/Login';
 import Header from './components/Header';
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
         <Header/>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </BrowserRouter>
     ) : (
