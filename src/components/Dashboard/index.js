@@ -38,12 +38,14 @@ class Dashboard extends Component {
         return(
             <div id="dashboard">
                 <div className="user-info">
-                    <h1>Olá {this.state.nome}</h1>
+                    <h1>Olá, {this.state.nome}</h1>
+                    <button onClick={() => this.logout()}>Sair</button>
+                </div>
+                <div className="btn-post">
                     <Link to="/dashboard/new">Novo Post</Link>
                 </div>
-                <p>Logado com: {firebase.getCurrent()}</p>
-                <button onClick={() => this.logout()}>Sair</button>
             </div>
+            
         )
     }
 }

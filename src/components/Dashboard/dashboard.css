@@ -7,16 +7,28 @@ div#dashboard {
 
 div#dashboard .user-info {
     display: flex;
-    height: 30px;
-    align-items: center;
+    justify-content: space-between;
 }
 
-div#dashboard .user-info a {
+div#dashboard .user-info button {
+    background-color: #272727;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div#dashboard a {
     padding: 8px;
     border-radius: 5px;
     font-size: 20px;
-    background-color: #ff0000;
+    background-color: #3b6cbf;
     color: #fff;
     text-decoration: none;
-    margin-left: 10px;
+    margin-top: 30px;
+}
+
+div#dashboard .btn-post {
+    margin-top: 20px;
 }
