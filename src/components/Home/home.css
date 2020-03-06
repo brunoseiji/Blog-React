@@ -28,8 +28,9 @@ section#post article span {
     padding-top: 5px;
 }
 
-section#post article>img {
+section#post article > img {
     width: 100%;
+    max-height: 539px;
 }
 
 section#post article footer {
